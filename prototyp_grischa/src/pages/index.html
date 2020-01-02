@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Keep The Sea Plastic Free</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #wrap {
+        position: relative;
+        overflow: hidden;
+      }
+      section {
+        box-sizing: border-box;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 10vmin;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body translate="no">
+    <div id="wrap">
+      <section>one</section>
+      <section>two</section>
+      <section>three</section>
+      <section>four</section>
+    </div>
+    <script src="../../node_modules/responsive-fullpage-scroll/dist/fullpage-scroll.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var fps = new FullPageScroll("wrap");
+      });
+    </script>
+  </body>
+</html>

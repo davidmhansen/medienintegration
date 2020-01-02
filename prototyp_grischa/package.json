@@ -1,0 +1,21 @@
+{
+  "name": "mi",
+  "version": "1.0.0",
+  "description": "Medienintegration Keep The Sea Plastic Free",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/src/pages/\""
+  },
+  "author": "David Hansen, Theresa Belz, Evelyn Falkenberg, Grischa Daum",
+  "license": "MIT",
+  "dependencies": {
+    "responsive-fullpage-scroll": "^1.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "http-server": "^0.12.0"
+  }
+}
+#https://www.npmjs.com/package/responsive-fullpage-scroll
