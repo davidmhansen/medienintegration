@@ -1,0 +1,39 @@
+/* GLOBAL */
+
+body {
+    color: white;
+}
+/* SECTIONS */
+
+#s__1 {
+    background-image: url('../img/home-comp-bg.png') !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#s__2 {
+    background-image: url('../img/meeresschicht-1.png') !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* BILDER */
+
+#logo__fish {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+#logo__text {
+    display: inline-block;
+    margin-top: 7rem;
+}
+
+/* HEADINGS */
+
+.s__1__heading {
+    margin-top: 5rem;
+}
