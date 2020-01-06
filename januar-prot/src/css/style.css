@@ -10,6 +10,22 @@ h1, h2, h3 {
     font-weight: 900;
 }
 
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    color: black;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.section__p {
+    margin-top: 1.5rem;
+}
+
 /* SECTIONS */
 
 #s__1 {
