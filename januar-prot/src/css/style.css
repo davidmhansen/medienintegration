@@ -3,6 +3,11 @@
 body {
     color: white;
 }
+
+h1, h2, h3 {
+    font-family: Playfair Display;
+}
+
 /* SECTIONS */
 
 #s__1 {
@@ -13,10 +18,40 @@ body {
 }
 
 #s__2 {
-    background-image: url('../img/meeresschicht-1.png') !important;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: rgb(11,142,186);
+    background: linear-gradient(0deg, rgba(11,142,186,1) 0%, rgba(25,165,211,1) 100%);
+}
+
+#s__3 {
+    background: rgb(0,118,158);
+    background: linear-gradient(0deg, rgba(0,118,158,1) 0%, rgba(11,142,186,1) 100%);
+}
+
+#s__4 {
+    background: rgb(0,84,117);
+    background: linear-gradient(0deg, rgba(0,84,117,1) 0%, rgba(0,118,158,1) 100%);
+}
+
+#s__5 {
+    background: rgb(3,48,76);
+    background: linear-gradient(0deg, rgba(3,48,76,1) 0%, rgba(0,84,117,1) 100%);
+}
+
+#s__6 {
+    background: rgb(11,19,43);
+    background: linear-gradient(0deg, rgba(11,19,43,1) 0%, rgba(3,48,76,1) 100%);
+}
+
+#s__7 {
+    background-color: #0b132b;
+}
+
+#s__8 {
+    background-color: #0b132b;
+}
+
+#s__9 {
+    background-color: #0b132b;
 }
 
 /* BILDER */
