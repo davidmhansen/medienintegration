@@ -26,6 +26,13 @@ p {
     margin-top: 1.5rem;
 }
 
+/* FULLPAGE JS OVERRIDE */
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: white !important;
+}
+
 /* SECTIONS */
 
 #s__1 {
@@ -88,7 +95,21 @@ p {
 }
 
 .img_octopus {
+    position: relative;
     z-index: 101;
+}
+
+.stones {
+    background-image: url('../img/comp-stone.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -5%;
+    right: -35%;
+    z-index: 90;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 #s__3 {
