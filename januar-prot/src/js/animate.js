@@ -1,13 +1,19 @@
 console.clear();
 
 // Set variables
-const octopus = document.querySelector(".img_octopus");
+const fish = document.querySelector(".img_fish");
 
 const lights_1 = document.querySelector(".lights_100");
 const lights_2 = document.querySelector(".lights_75");
 
 const dots_1 = document.querySelector(".dots_overlay_bottom");
 const dots_2 = document.querySelector(".dots_overlay_top");
+
+const dots_1_s__2 = document.querySelector(".dots_overlay_bottom_s__2");
+const dots_2_s__2 = document.querySelector(".dots_overlay_top_s__2");
+
+const clouds_front = document.querySelector(".clouds-front");
+const clouds_back = document.querySelector(".clouds-back");
 
 const randomX = random(10, 20);
 const randomY = random(20, 30);
@@ -18,8 +24,8 @@ const randomAngle = random(8, 12);
 
 // Set Tween
 
-// Octopus
-TweenLite.set(octopus, {
+// fish
+TweenLite.set(fish, {
   x: randomX(-1),
   y: randomX(1),
   rotation: randomAngle(-1)
@@ -48,10 +54,33 @@ TweenLite.set(dots_1, {
     y: randomX(1)
   });
 
+  // Dots Bottom S__2
+TweenLite.set(dots_1_s__2, {
+  x: randomX(-1),
+  y: randomX(1)
+});
+
+// Dots Top S__2
+TweenLite.set(dots_1_s__2, {
+  x: randomX(-1),
+  y: randomX(1)
+});
+
+// Clouds Front
+TweenLite.set(clouds_front, {
+  x: randomX(-1),
+});
+
+// Clouds Back
+TweenLite.set(clouds_back, {
+  x: randomX(-1),
+  y: randomX(1)
+});
+
 // Move Functions
-moveX(octopus, 1);
-moveY(octopus, -1);
-rotate(octopus, 1);
+moveX(fish, 1);
+moveY(fish, -1);
+rotate(fish, 1);
 
 moveX(lights_1, 1);
 
@@ -63,6 +92,17 @@ moveY(dots_1, -1);
 
 moveX(dots_2, 1);
 moveY(dots_2, -1);
+
+moveX(dots_1_s__2, 1);
+moveY(dots_1_s__2, -1);
+
+moveX(dots_2_s__2, 1);
+moveY(dots_2_s__2, -1);
+
+moveX(clouds_front, 1);
+
+moveX(clouds_back, 1);
+moveY(clouds_back, -1);
 
 
 
