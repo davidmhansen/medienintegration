@@ -192,6 +192,14 @@ p {
     background: linear-gradient(0deg, rgba(0,84,117,1) 0%, rgba(0,118,158,1) 100%);
 }
 
+.img_octopus_container {
+    position: absolute;
+    width: 30%;
+    right: 20%;
+    bottom: 10%;
+    overflow: visible;
+}
+
 #s__5 {
     background: rgb(3,48,76);
     background: linear-gradient(0deg, rgba(3,48,76,1) 0%, rgba(0,84,117,1) 100%);

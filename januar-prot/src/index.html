@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="../node_modules/fullpage.js/dist/fullpage.css" />
   <link rel="stylesheet" href="../node_modules/bootstrap-css-only/css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Playfair+Display:400,700,900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Playfair+Display:400,700,900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -49,6 +49,12 @@
               Algen, Seegras und Plankton wachsen. Diese Meerespflanzen und -tiere bilden die Basis für das Leben im
               Meer.
             </p>
+            <audio id="epipelagial">
+              <source src="./audio/text/S1_Epipeligial_Heading.opus">
+            </audio>
+            <button type="button" onclick="playSection_2()">
+              <i class="material-icons">record_voice_over</i>
+            </button>
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-lg-6 s__2__content_img">
             <img class="img-fluid img_fish" src="img/fish-group.png" alt="" />
@@ -84,10 +90,10 @@
     <div class="fp-section" id="s__4">
       <div class="container">
         <div class="row">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
             <h3>693 Unterwasserarten sind durch die Verschmutzung der Ozeane durch Plastikmüll unmittelbar bedroht</h3>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="img_octopus_container">
             <img class="img-fluid" src="img/octopus.png" alt="" />
           </div>
         </div>
@@ -131,12 +137,12 @@
   <script src="js/animate.js"></script>
   <script>
     new fullpage("#fullpage", {
-      // licenseKey: 'YOUR KEY HERE',
+      licenseKey: 'Yec?d3FB%w2',
       sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
       navigation: true,
       navigationPosition: "right",
       navigationTooltips: [
-        "100 Meter",
+        "",
         "1000 Meter",
         "2000 Meter",
         "5000 Meter"
@@ -145,6 +151,12 @@
       showActiveTooltip: true,
       controlArrows: false
     });
+  </script>
+  <script>
+    var x = document.getElementById("epipelagial");
+    function playSection_2() {
+      x.play();
+    }
   </script>
 </body>
 
