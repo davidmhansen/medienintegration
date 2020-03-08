@@ -32,15 +32,7 @@ TweenLite.set(fish, {
 });
 
 // Lights 1
-TweenLite.set([lights_1], {
-    y: randomX(1),
-  });
 
-// Lights 2
-TweenLite.set(lights_2, {
-    x: randomX(-1),
-    y: randomX(1)
-  });
 
 // Dots Bottom
 TweenLite.set(dots_1, {
@@ -144,33 +136,3 @@ function random(min, max) {
   const delta = max - min;
   return (direction = 1) => (min + delta * Math.random()) * direction;
 }
-
-
-// SCROLL MAGIC GSAP ANIMATIONS
-
-var controller = new ScrollMagic.Controller();
-var tl = new TimelineMax();
-tl.staggerFrom(".section__p", 1.25, {
-  scale: 0,
-  cycle: {
-    y: [-50, 50]
-  },
-  ease: Elastic.easeOut,
-  stagger: {
-    from: "center",
-    amount: 0.25
-  }
-});
-
-var scene = new ScrollMagic.Scene({
-  triggerElement: "#s__2",
-  triggerHook: 0
-})
-  .addIndicators({
-    colorTrigger: "white",
-    colorStart: "white",
-    colorEnd: "white",
-    indent: 5
-  })
-  .setTween(tl)
-  .addTo(controller);

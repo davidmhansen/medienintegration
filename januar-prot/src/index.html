@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
-  <div id="fullpage">
+<body class="loading">
+  <div id="fullpage" class="content">
     <div class="fp-section" id="s__1">
       <div class="clouds-front"></div>
       <div class="clouds-back"></div>
@@ -34,7 +34,7 @@
 
     <!-- Content Section 1 -->
 
-    <div class="fp-section" id="s__2">
+    <div class="fp-section animate-section" id="s__2">
       <div class="lights_100"></div>
       <div class="lights_75"></div>
       <div class="dots_overlay_bottom"></div>
@@ -43,9 +43,9 @@
       <div class="container s__2__container">
         <div class="row">
           <div class="col-6 col-sm-6 col-md-6 col-lg-6 s__2__content_text">
-            <h3>Auf jedem Quadratmeter treiben ca. 18.000 Plastikteile</h3>
-            <p class="section__p">
-              In der ersten Schicht kann durch das einfallende Sonnenlicht Photosynthese stattfinden - so können hier
+            <h3 id="h3-test" class="heading">Auf jedem Quadratmeter treiben ca. 18.000 Plastikteile</h3>
+            <p id="p-test" class="section__p" data-fx="4">
+              In der ersten Schicht kann durch das einfallende Sonnenlicht <a class="block__link" data-img="img/pictures/2.jpg">Photosynthese</a> stattfinden - so können hier
               Algen, Seegras und Plankton wachsen. Diese Meerespflanzen und -tiere bilden die Basis für das Leben im
               Meer.
             </p>
@@ -57,7 +57,7 @@
             </button>
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-lg-6 s__2__content_img">
-            <img class="img-fluid img_fish" src="img/fish-group.png" alt="" />
+            <img id="img-test" class="img-fluid img_fish" src="img/fish-group.png" alt="" />
           </div>
         </div>
       </div>
@@ -65,9 +65,9 @@
 
     <!-- Content Section 2 -->
 
-    <div class="fp-section" id="s__3">
-      <div class="dots_overlay_bottom_s__2"></div>
-      <div class="dots_overlay_top_s__2"></div>
+    <div class="fp-section animate-section" id="s__3">
+      <div class="dots_overlay_bottom"></div>
+      <div class="dots_overlay_top"></div>
       <div class="stones_s__2"></div>
         <div class="container">
           <div class="row">
@@ -75,9 +75,9 @@
               <img class="img-fluid img_octopus" src="img/octopus.png" alt="" />
             </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-              <h3>Lorem ipsum dolor sit amet.</h3>
+              <h3>Aber die Meeresbewohner...</h3>
               <p>
-                Aber die Meeresbewohner verwechseln den umherschwimmenden Müll im Wasser mit ihrer eigentlichen Nahrung.
+                verwechseln den umherschwimmenden Müll im Wasser mit ihrer eigentlichen Nahrung.
                 Die Tiere verhungern mit dem Magen voller Plastik oder verenden wegen der darin enthaltenen Schadstoffe.
               </p>
             </div>
@@ -85,13 +85,16 @@
         </div>
     </div>
 
-    <!-- Content Section 3 -->
+<!-- Content Section 3 -->
 
-    <div class="fp-section" id="s__4">
+    <div class="fp-section animate-section" id="s__4">
+      <div class="dots_overlay_bottom"></div>
+      <div class="dots_overlay_top"></div>
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-12">
             <h3>693 Unterwasserarten sind durch die Verschmutzung der Ozeane durch Plastikmüll unmittelbar bedroht</h3>
+            <p></p>
           </div>
           <div class="img_octopus_container">
             <img class="img-fluid" src="img/octopus.png" alt="" />
@@ -102,39 +105,67 @@
 
 <!-- Content Section 4 -->
 
-    <div class="fp-section" id="s__5">
+    <div class="fp-section animate-section" id="s__5">
+      <div class="dots_overlay_bottom"></div>
+      <div class="dots_overlay_top"></div>
       <div class="container">
         <div class="row">
           <div class="col-6 col-sm-6 col-md-6 col-lg-6">
             <img class="img-fluid" src="img/octopus.png" alt="" />
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-            <h3>Lorem ipsum dolor sit amet.</h3>
+            <h3>Über 70% des Mülls schwimmt in tieferen Schichten...</h3>
             <p>
-              Aber die Meeresbewohner verwechseln den umherschwimmenden Müll im Wasser mit ihrer eigentlichen Nahrung.
-              Die Tiere verhungern mit dem Magen voller Plastik oder verenden wegen der darin enthaltenen Schadstoffe.
+              und sinkt Richtung Meeresboden ab. Durch äußere Faktoren werden die Kunststoffe mit der Zeit spröde und zersetzen sich in besonders gefährliche Mikropartikel. Diese enthalten toxische Stoffe und ziehen weitere Umweltgifte aus der Umgebung wie Magnete an. Über die Nahrungskette gelangt das Mikroplastik dann auch auf unsere Teller. 
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="fp-section" id="s__6" data-anchor="section_6">
-      <div class="slide" data-anchor="slide1">six 1
-        <a href="#section_6/slide2">Mehr erfahren</a>
-      </div>
-      <div class="slide" data-anchor="slide2">six 2
-        <a href="#section_6/slide1">Zurück</a>
+
+<!-- Content Section 5 -->
+
+    <div class="fp-section animate-section" id="s__6">
+      <div class="dots_overlay_bottom"></div>
+      <div class="dots_overlay_top"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <img class="img-fluid" src="img/octopus.png" alt=""/>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <h3>Selbst in 10000 Meter Meerestiefe,</h3>
+            <p>
+              in dunkler Eiseskälte, wo nur noch die wenigsten Lebewesen überlebensfähig sind, können vom Menschen verursachte Schäden beobachtet werden. So wurde in den dort lebenden Flohkrebsen langlebige giftige Schadstoffe, wie aus Kühlschränken und anderen Elektrogeräten, gefunden, die nicht fachgerecht entsorgt wurden.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="fp-section" id="s__7">seven</div>
-    <div class="fp-section" id="s__8">eight</div>
+
+<!-- Content Section 6 -->
+
+    <div class="fp-section" id="s__7" data-anchor="section_7">
+      <div class="slide" data-anchor="slide1">seven 1
+        <a href="#section_7/slide2">Mehr erfahren</a>
+      </div>
+      <div class="slide" data-anchor="slide2">seven 2
+        <a href="#section_7/slide1">Zurück</a>
+      </div>
+    </div>
+
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="../node_modules/fullpage.js/dist/fullpage.js"></script>
+  <script src="js/charming.min.js"></script>
+  <script src="js/image-reveal.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="js/animate.js"></script>
+  <script src="js/animate2.js"></script>
+  
   <script>
     new fullpage("#fullpage", {
       licenseKey: 'Yec?d3FB%w2',
@@ -143,9 +174,11 @@
       navigationPosition: "right",
       navigationTooltips: [
         "",
+        "200 Meter",
         "1000 Meter",
-        "2000 Meter",
-        "5000 Meter"
+        "4000 Meter",
+        "6000 Meter",
+        "ca. 11000 Meter"
       ],
       easingcss3: "cubic-bezier(0.175, 0.885, 0.320, 1)",
       showActiveTooltip: true,
