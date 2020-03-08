@@ -43,10 +43,26 @@ p {
 
 /* HOVER REVEAL */
 
+.block {
+}
+
+.block__link {
+	position: relative;
+	cursor: pointer;
+	padding: 0.5rem 0;
+	color: var(--color-blocklink);
+}
+
+.block__link:hover {
+	color: var(--color-blocklink-hover);
+}
+
 .hover-reveal {
-	position: fixed;
-	width: 200px;
-	height: 150px;
+    position: fixed;
+    margin-top: -80%;
+    margin-left: -50%;
+	width: 100%;
+	height: 400px;
 	top: 0;
 	left: 0;
 	pointer-events: none;

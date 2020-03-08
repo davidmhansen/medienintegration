@@ -37,7 +37,7 @@ function animateSection(heading, text, image, dots1, dots2) {
     tl.fromTo(
         heading,
         1.5,
-        {opacity: 0, y: '-25%'}, {opacity: 1, y: '0%', ease: Power2.easeInOut}, 
+        {opacity: 0, y: '-25%'}, {opacity: 1, y: '0%', ease: Power2.easeInOut}
         )
         .fromTo(
             text,
