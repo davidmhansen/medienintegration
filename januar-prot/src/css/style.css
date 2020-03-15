@@ -109,7 +109,7 @@ p {
 }
 
 .clouds-front {
-    background-image: url('../img/clouds-front.png');
+    background-image: url('../img/compressed/clouds-front.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -121,7 +121,7 @@ p {
 }
 
 .clouds-back {
-    background-image: url('../img/clouds-back.png');
+    background-image: url('../img/compressed/clouds-back.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -144,7 +144,7 @@ p {
 }
 
 .lights_100 {
-    background-image: url('../img/lights-100.png');
+    background-image: url('../img/compressed/lights-100.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -156,7 +156,7 @@ p {
 }
 
 .lights_75 {
-    background-image: url('../img/lights-100.png');
+    background-image: url('../img/compressed/lights-75.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -201,7 +201,7 @@ p {
 }
 
 .stones_s__1 {
-    background-image: url('../img/stone-complete.png');
+    background-image: url('../img/compressed/stone-complete.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -242,7 +242,7 @@ p {
 }
 
 .stones_s__2 {
-    background-image: url('../img/stone-complete.png');
+    background-image: url('../img/compressed/stone-complete.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
