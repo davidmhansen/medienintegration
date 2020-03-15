@@ -48,7 +48,7 @@ function animateSection(heading, text, image, dots1, dots2) {
             image,
             1.0,
             {opacity: 0}, {opacity: 1, ease: Power2.easeInOut},
-            "-=1.5"
+            "-=1.0"
         )
         .fromTo(
             dots1,
